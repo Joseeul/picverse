@@ -1,22 +1,22 @@
 /* configuration */
 @font-face {
     font-family: 'Black';
-    src: url('/assets/font/Metropolis-Black.otf') format('opentype');
+    src: url('../assets/font/Metropolis-Black.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Bold';
-    src: url('/assets/font/Metropolis-Bold.otf') format('opentype');
+    src: url('../assets/font/Metropolis-Bold.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Medium';
-    src: url('/assets/font/Metropolis-Medium.otf') format('opentype');
+    src: url('../assets/font/Metropolis-Medium.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Regular';
-    src: url('/assets/font/Metropolis-Regular.otf') format('opentype');
+    src: url('../assets/font/Metropolis-Regular.otf') format('opentype');
 }
 
 * {
