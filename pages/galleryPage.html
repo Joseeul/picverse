@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picverse | Gallery</title>
+
+    <link rel="stylesheet" href="../style/gallerypageStyle.css">
+    <link rel="stylesheet" href="../style/configuration.css">
+    <link rel="stylesheet" href="../style/responsive.css">
+    
+    <link rel="icon" type="image/x-icon" href="../assets/webAssets/favicon.svg">
+
+    <script src="../script/gallerypageScript.js"></script>
+    <script src="../script/responsiveScript.js"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar-parent">
+    
+        <div class="left-item">
+    
+            <a href="../index.html"><img class="logo" src="../assets/webAssets/logo.svg" alt="logo"></a>
+    
+            <div class="menu">
+                <a href="../index.html">Home</a>
+                <a href="../pages/galleryPage.html">Gallery</a>
+                <a href="../pages/forumPage.html">Forum</a>
+                <a href="../pages/submissionPage.html">Contribution</a>
+                <a href="../pages/aboutusPage.html">About Us</a>
+            </div>
+    
+        </div>
+    
+        <div class="right-item">
+    
+            <div class="icon-container">
+                <a href="#"><img class="icon" src="../assets/webAssets/linkedin.svg" alt="linkedin"></a>
+    
+                <a href="https://www.instagram.com/joseandreas54?igsh=MXc0cWtyaHA0NmluaQ%3D%3D&utm_source=qr"
+                    target="_blank"><img class="icon" src="../assets/webAssets/instagram.svg" alt="instagram"></a>
+    
+                <a href="https://discord.gg/7ZzCmjPF" target="_blank"><img class="icon" src="../assets/webAssets/discord.svg"
+                        alt="discord"></a>
+    
+            </div>
+    
+            <button class="default-button btn-login">Log In</button>
+    
+        </div>
+    
+        <div class="responsive-navbar-parent">
+            <div class="menu-container-parent">
+                <img src="../assets/webAssets/hamburger-menu.svg" alt="hamburger" class="hamburger"
+                    onclick="showNavbar('nav_menu')">
+    
+                <a href="../index.html"><img src="../assets/webAssets/logo.svg" alt="logo" class="logo"></a>
+            </div>
+    
+            <button class="default-button btn-login">Log In</button>
+        </div>
+    
+    </div>
+    <!-- end navbar -->
+    
+    <!-- responsive-navbar -->
+    <div class="responsive-navbar-menu" id="nav_menu">
+        <div class="menu-container">
+            <a href="../index.html">Home</a>
+            <a href="../pages/galleryPage.html">Gallery</a>
+            <a href="../pages/forumPage.html">Forum</a>
+            <a href="../pages/submissionPage.html">Contribution</a>
+            <a href="../pages/aboutusPage.html">About Us</a>
+        </div>
+    </div>
+    <!-- end responsive navbar -->
+
+    <!-- search bar -->
+    <div class="search-bar-parent">
+
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search art">
+            <button class="btn-search default-button">Search</button>
+        </div>
+
+    </div>
+    <!-- end search bar -->
+
+    <!-- popular tag -->
+    <div class="popular-tag-parent">
+
+        <p>Popular Tag</p>
+
+        <div class="tag-parent">
+
+            <button class="tag-button active" onclick="changeCategory('featured', this)">Featured</button>
+
+            <button class="tag-button" onclick="changeCategory('trending', this)">Trending</button>
+
+            <button class="tag-button" onclick="changeCategory('aigenerated', this)">AI Generated</button>
+
+            <button class="tag-button" onclick="changeCategory('love', this)">Love</button>
+
+            <button class="tag-button" onclick="changeCategory('world', this)">World</button>
+
+            <button class="tag-button" onclick="changeCategory('cars', this)">Cars</button>
+
+            <button class="tag-button" onclick="changeCategory('animals', this)">Animals</button>
+
+        </div>
+
+    </div>
+    <!-- end popular tag -->
+
+    <!-- gallery content -->
+    <div class="gallery-content-parent">
+
+        <div class="content featured g-active">
+            <div class="gallery-parent">
+
+                <div class="cover">
+                    <img src="../assets/img/featuredImg/Fantasy_RoadTrip.jpg" alt="fantasy-road-trip" class="img-pointer"
+                        id="img1" onclick="showModal(img1, modal1, document.getElementsByClassName('close')[0])">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Fantasy Road Trip</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">3.532</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Calvy</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/featuredImg/Pink_City.jpg" alt="pink-city" class="img-pointer"
+                        id="img2" onclick="showModal(img2, modal2, document.getElementsByClassName('close')[1])">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Pink City</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">5.231</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Natshu</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/featuredImg/Fantasy_City.jpg" alt="fantasy-city" class="img-pointer"
+                        id="img3" onclick="showModal(img3, modal3, document.getElementsByClassName('close')[2])">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Fantasy City</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">5.781</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Marxy</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/featuredImg/Pink_Clouds.jpg" alt="pink-clouds" class="img-pointer"
+                        id="img4" onclick="showModal(img4, modal4, document.getElementsByClassName('close')[3])">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Pink Clouds</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">1.801</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Mirene</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/featuredImg/River_Boat.jpg" alt="river-boat" class="img-pointer"
+                        id="img5" onclick="showModal(img5, modal5, document.getElementsByClassName('close')[4])">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">River Boat</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">2.006</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Arya</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/featuredImg/Couple_Love.jpg" alt="couple-love" class="img-pointer"
+                        id="img6" onclick="showModal(img6, modal6, document.getElementsByClassName('close')[5])">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Couple Love</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">5.222</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Bertnix</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/featuredImg/Beautiful_Office.jpg" alt="beautiful-office" class="img-pointer"
+                        id="img7" onclick="showModal(img7, modal7, document.getElementsByClassName('close')[6])">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Beautiful Office</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">1.543</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Ery</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/featuredImg/Cloud_Imagination.jpg" alt="cloud-imagination" class="img-pointer"
+                        id="img8" onclick="showModal(img8, modal8, document.getElementsByClassName('close')[7])">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Cloud Imagination</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">8.612</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Bimo</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/featuredImg/Cloud_Whale.jpg" alt="cloud-whale" class="img-pointer"
+                        id="img9" onclick="showModal(img9, modal9, document.getElementsByClassName('close')[8])">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Cloud Whale</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">4.172</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Ria</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content trending">
+
+            <div class="gallery-parent">
+
+                <div class="cover">
+                    <img src="../assets/img/trendingImg/Astronout.jpg" alt="astronout">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Astronout</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">4.892</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Bicheng</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/trendingImg/Futuristic_Casino.jpg" alt="futuristic-casino">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Futuristic Casino</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">1.062</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Nindi</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/trendingImg/Futuristic_Classroom.jpg" alt="futuristic-classroom">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Futuristic Classroom</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">4.856</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Brishia</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/trendingImg/Geometric-Shape.jpg" alt="geometric-shape">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Geometric Shape</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">8.712</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Keshi</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/trendingImg/Geometric_Nature.jpg" alt="geometric-nature">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Geometric Nature</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">3.723</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Lany</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/trendingImg/Mirror_Geometric.jpg" alt="mirror-geometric">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Mirror Geometric</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">1.726</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Niki</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/trendingImg/Pillar_Nature.jpg" alt="pillar-nature">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Pillar Nature</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">4.278</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Eki</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/trendingImg/Robot_Bird.jpg" alt="robot-bird">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Robot Bird</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">2.836</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Cindy</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/trendingImg/Urban_Travel.jpg" alt="urban-travel">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Urban Travel</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">3.198</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Wong</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content aigenerated">
+
+            <div class="gallery-parent">
+
+                <div class="cover">
+                    <img src="../assets/img/aigeneratedImg/Cartoon_Bird.jpg" alt="cartoon-bird">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Cartoon Bird</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">2.317</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Blestop</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/aigeneratedImg/Fantasy_Egg.jpg" alt="fantasy-egg">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Fantasy Egg</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">2.005</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Hoseung</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/aigeneratedImg/Half_Panda_Robot.jpg" alt="half-panda-robot">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Half Panda Robot</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">9.245</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Marpin</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/aigeneratedImg/Human_Bot.jpg" alt="human-bot">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Human Bot</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">6.532</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Mpins</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/aigeneratedImg/Human_Fish.jpg" alt="human-fish">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Human Fish</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">5.112</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Denice</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/aigeneratedImg/Loving_Robots.jpg" alt="loving-robots">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Loving Robots</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">3.999</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Bieber</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/aigeneratedImg/Nature_Train.jpg" alt="nature-train">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Nature Train</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">8.656</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Tinjust</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/aigeneratedImg/People_Paintball.jpg" alt="people-paintball">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">People Paintball</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">4.444</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Cariny</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/aigeneratedImg/Sea_Man.jpg" alt="sea-man">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Sea Man</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">1.865</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Amirih</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content love">
+
+            <div class="gallery-parent">
+
+                <div class="cover">
+                    <img src="../assets/img/loveImg/Cloud_Hearts.jpg" alt="cloud-hearts">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Cloud Hearts</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">7.317</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Khi</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/loveImg/Clouds_Couple.jpg" alt="clouds-couple">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Clouds Couple</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">5.846</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Agnes</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/loveImg/Couple_Candles.jpg" alt="couple-candles">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Couple Candles</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">6.222</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Monici</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/loveImg/Fantasy_World_Hugging.jpg" alt="fantasy-world-hugging">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Fantasy World Hugging</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">3.901</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Miydin</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/loveImg/Heart_Ballons.jpg" alt="heart-ballons">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Heart Ballons</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">6.642</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Roshi</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/loveImg/Heart_Shape.jpg" alt="heart-shape">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Heart Shape</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">4.152</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Ahcmid</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/loveImg/Hugging_Celebration.jpg" alt="hugging-celebration">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Hugging Celebration</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">3.813</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Arwans</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/loveImg/Loving_Connections.jpg" alt="loving-connections">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Loving Connections</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">5.192</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Yantong</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/loveImg/Romantic_Symbol.jpg" alt="romantic-symbol">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Romantic Symbol</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">9.342</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Wudy</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content world">
+
+            <div class="gallery-parent">
+
+                <div class="cover">
+                    <img src="../assets/img/worldImg/Brutal_Building.jpg" alt="brutal-building">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Brutal Building</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">4.351</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Deddy</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/worldImg/Circle_Plane.jpg" alt="circle-plane">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Circle Plane</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">9.547</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Sarah</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/worldImg/Dark_Earth.jpg" alt="dark-earth">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Dark Earth</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">1.532</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Dendi</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/worldImg/Dimensional_City.jpg" alt="dimensional-city">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Dimensional City</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">4.097</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Miawi</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/worldImg/Earth_2_Earth.jpg" alt="earth-2-earth">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Earth 2 Earth</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">7.427</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Berty</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/worldImg/Green_Campus.jpg" alt="heart-shape">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Green Campus</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">1.748</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Wiyada</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/worldImg/Greeny_Vegetation.jpg" alt="greeny-vegetation">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Greeny Vegetation</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">7.474</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Acolit</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/worldImg/Pink_Shape.jpg" alt="pink-shape">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Pink Shape</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">6.124</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Pusya</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/worldImg/World_People.jpg" alt="world-people">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">World People</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">1.517</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Buzzed</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content cars">
+
+            <div class="gallery-parent">
+
+                <div class="cover">
+                    <img src="../assets/img/carsImg/Bypass_Bridge.jpg" alt="bypass-bridge">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Bypass Bridge</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">6.712</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Aqoky</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/carsImg/Carship.jpg" alt="carship">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Carship</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">3.783</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Hugy</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/carsImg/Carsnow.jpg" alt="carsnow">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Carsnow</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">4.812</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Wishnu</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/carsImg/City_Bypass.jpg" alt="city-bypass">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">City Bypass</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">8.312</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Regy</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/carsImg/Cyber_Car.jpg" alt="cyber-car">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Cyber Car</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">6.082</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Whasa</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/carsImg/Future_Tunnel.jpg" alt="future-tunnel">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Future Tunnel</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">6.797</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Windut</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/carsImg/Mini_RC.jpg" alt="mini-rc">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Mini RC</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">5.902</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Bearnuch</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/carsImg/Small_F_Car.jpg" alt="small-f-car">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Small F Car</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">7.019</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Jonty</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/carsImg/Speed_Car.jpg" alt="speed-car">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Speed Car</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">4.812</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Lily</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="content animals">
+
+            <div class="gallery-parent">
+
+                <div class="cover">
+                    <img src="../assets/img/animalsImg/2D_Bird.jpg" alt="2d-bird">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">2D Bird</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">7.719</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Mupins</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/animalsImg/Blue_Bird.jpg" alt="blue-bird">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Blue Bird</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">1.111</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Maltiz</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/animalsImg/Dogacat.jpg" alt="dogacat">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Dogacat</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">3.090</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Zoda</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/animalsImg/Flower_Rat.jpg" alt="flower-rat">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Flower Rat</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">3.192</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Molys</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/animalsImg/Ice_Pinguin.jpg    " alt="ice-pinguin">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Ice Pinguin</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">8.512</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Lemin</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/animalsImg/Nature_Bear.jpg" alt="nature-bear">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Nature Bear</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">8.128</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Uky</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/animalsImg/Not_Red_Panda.jpg" alt="not-red-panda">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Not Red Panda</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">9.999</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Valenz</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/animalsImg/Praying_Hedgehog.jpg" alt="praying-hedgehog">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Praying Hedgehog</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">3.822</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Bruwno</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="../assets/img/animalsImg/Tiger_Training.jpg" alt="tiger-training">
+
+                    <div class="img-details">
+
+                        <div class="title-likes">
+                            <p class="title">Tiger Training</p>
+                            <div class="total-likes">
+                                <img src="../assets/webAssets/like.svg" alt="like">
+                                <p class="likes">2.129</p>
+                            </div>
+                        </div>
+
+                        <div class="creator-name">
+                            <p>by Obow</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end gallery content -->
+
+    <!-- image modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            
+            <div class="details-parent">
+                <img src="../assets/img/featuredImg/Fantasy_RoadTrip.jpg" alt="fantasy-road-trip">
+
+                <div class="details-component">
+                    <p class="details-title">Fantasy Road Trip</p>
+
+                    <p class="details-author">by Calvy</p>
+
+                    <p class="details-desc">A very valuable journey, especially with the people we love. every kilometer has its own story. I wrote this so that I
+                    always remember the moment when we laughed at each other and forgot all the problems that existed. but now all that
+                    remains are memories, only me and the soles of my feet that are always faithful in every journey of my life. thank you
+                    my feet.</p>
+
+                    <p class="tag-text">Related tag:</p>
+
+                    <div class="details-tag">
+                        <button>Cloud</button>
+                        <button>Landscape</button>
+                        <button>Moon</button>
+                        <button>Liminal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+    
+            <div class="details-parent">
+                <img src="../assets/img/featuredImg/Pink_City.jpg" alt="pink-city">
+    
+                <div class="details-component">
+                    <p class="details-title">Pink City</p>
+    
+                    <p class="details-author">by Natshu</p>
+    
+                    <p class="details-desc">A sprawling metropolis bathed in vibrant shades of pink, as though the entire city has been dipped in a rosy hue. The
+                    skyline features modern skyscrapers blending seamlessly with charming, pastel-colored buildings. The streets are filled
+                    with pink blossoms, casting a dreamy, surreal glow over the bustling urban scene. The setting sun adds a golden tint to
+                    the pink, creating a mesmerizing, otherworldly atmosphere.</p>
+    
+                    <p class="tag-text">Related tag:</p>
+    
+                    <div class="details-tag">
+                        <button>Pink City</button>
+                        <button>Rosy Hue</button>
+                        <button>Urban Landscape</button>
+                        <button>Vibrant Blossoms</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+    
+            <div class="details-parent">
+                <img src="../assets/img/featuredImg/Fantasy_City.jpg" alt="fantasy-city">
+    
+                <div class="details-component">
+                    <p class="details-title">Fantasy City</p>
+    
+                    <p class="details-author">by Marxy</p>
+    
+                    <p class="details-desc">An enchanting cityscape that defies the bounds of reality, filled with fantastical elements and whimsical architecture.
+                    Towering castles with spiraling turrets stand side by side with futuristic glass buildings. The streets are illuminated
+                    by glowing lanterns that float mid-air, casting a magical light over the cobblestone paths. Exotic flora and fauna add
+                    splashes of vibrant colors, and mythical creatures like dragons and griffins soar above the city. The sky is painted
+                    with shades of twilight, creating an ethereal ambiance that feels like a scene from a fairytale.</p>
+    
+                    <p class="tag-text">Related tag:</p>
+    
+                    <div class="details-tag">
+                        <button>Fantasy City</button>
+                        <button>Exotic Flora</button>
+                        <button>Magical Lanterns</button>
+                        <button>Enchanting Cityscape</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+    
+            <div class="details-parent">
+                <img src="../assets/img/featuredImg/Pink_Clouds.jpg" alt="pink-clouds">
+    
+                <div class="details-component">
+                    <p class="details-title">Pink Clouds</p>
+    
+                    <p class="details-author">by Mirene</p>
+    
+                    <p class="details-desc">A serene sky adorned with soft, cotton candy-like clouds painted in shades of pink. These delicate clouds float
+                    gracefully across the horizon, creating a dreamy and tranquil atmosphere. The sunlight filters through, casting a
+                    gentle, rosy glow over the landscape below. The scene evokes a sense of calm and wonder, as if one has stepped into a
+                    world where the sky itself blushes with the colors of a peaceful sunset.</p>
+    
+                    <p class="tag-text">Related tag:</p>
+    
+                    <div class="details-tag">
+                        <button>Pink Clouds</button>
+                        <button>Serene Sky</button>
+                        <button>Dreamy Atmosphere</button>
+                        <button>Peaceful Sky</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+    
+            <div class="details-parent">
+                <img src="../assets/img/featuredImg/River_Boat.jpg" alt="river-boat">
+    
+                <div class="details-component">
+                    <p class="details-title">River Boat</p>
+    
+                    <p class="details-author">by Arya</p>
+    
+                    <p class="details-desc">A tranquil scene featuring a traditional wooden boat gently gliding along a serene river. The boat is adorned with
+                    vibrant, colorful patterns, and its curved shape mirrors the gentle bends of the river. Surrounding the boat, lush
+                    greenery and delicate flowers create a picturesque, natural frame. The water reflects the blue sky and the boat's
+                    intricate design, creating a harmonious blend of colors. This peaceful, idyllic moment captures the timeless beauty of
+                    life on the river, where nature and human craftsmanship coexist in perfect harmony.</p>
+    
+                    <p class="tag-text">Related tag:</p>
+    
+                    <div class="details-tag">
+                        <button>River Boat</button>
+                        <button>Serene River</button>
+                        <button>Lush Greeny</button>
+                        <button>Harmony With Nature</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+    
+            <div class="details-parent">
+                <img src="../assets/img/featuredImg/Couple_Love.jpg" alt="couple-love">
+    
+                <div class="details-component">
+                    <p class="details-title">Couple Love</p>
+    
+                    <p class="details-author">by Bertnix</p>
+    
+                    <p class="details-desc">A tender moment shared between a couple, capturing the essence of love and connection. The couple stands hand in hand,
+                    gazing into each other's eyes with a backdrop of a beautiful, romantic sunset. The warm, golden hues of the setting sun
+                    cast a soft glow around them, creating an intimate and serene atmosphere. Their expressions are filled with affection
+                    and warmth, reflecting the deep bond they share. The scene is further enhanced by the natural surroundings, such as
+                    blooming flowers or a serene beach, adding to the overall sense of tranquility and love.</p>
+    
+                    <p class="tag-text">Related tag:</p>
+    
+                    <div class="details-tag">
+                        <button>Couple Love</button>
+                        <button>Tender Moment</button>
+                        <button>Romantic</button>
+                        <button>Love And Connection</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+    
+            <div class="details-parent">
+                <img src="../assets/img/featuredImg/Beautiful_Office.jpg" alt="beautiful-office">
+    
+                <div class="details-component">
+                    <p class="details-title">Beautiful Office</p>
+    
+                    <p class="details-author">by Ery</p>
+    
+                    <p class="details-desc">A modern, well-designed office space that seamlessly combines functionality with aesthetics. The office features sleek,
+                    ergonomic furniture, abundant natural light streaming through large windows, and a harmonious color palette of calming
+                    neutrals and vibrant accents. Thoughtfully arranged plants and artwork add a touch of nature and inspiration, creating a
+                    welcoming and productive environment. The clean, organized layout promotes focus and collaboration, making it an ideal
+                    workspace for creativity and innovation.</p>
+    
+                    <p class="tag-text">Related tag:</p>
+    
+                    <div class="details-tag">
+                        <button>Beautiful Office</button>
+                        <button>Modern Workspace</button>
+                        <button>Natural Lights</button>
+                        <button>Creative Office</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+    
+            <div class="details-parent">
+                <img src="../assets/img/featuredImg/Cloud_Imagination.jpg" alt="cloud-imagination">
+    
+                <div class="details-component">
+                    <p class="details-title">Cloud Imagination</p>
+    
+                    <p class="details-author">by Bimo</p>
+    
+                    <p class="details-desc">A whimsical sky filled with clouds of various shapes and sizes, each cloud resembling a different imaginative figure.
+                    Some clouds take on the forms of animals, while others appear as mythical creatures or fantastical objects. The soft,
+                    fluffy texture of the clouds contrasts beautifully with the vibrant blue sky. The scene evokes a sense of wonder and
+                    creativity, as if the sky itself is a canvas for endless daydreams and stories. The gentle sunlight casts a warm, golden
+                    hue over the clouds, enhancing their dreamlike quality.</p>
+    
+                    <p class="tag-text">Related tag:</p>
+    
+                    <div class="details-tag">
+                        <button>Cloud Imagination</button>
+                        <button>Whimsikal Sky</button>
+                        <button>Cloud Shapes</button>
+                        <button>Creative Sky</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+    
+            <div class="details-parent">
+                <img src="../assets/img/featuredImg/Cloud_Whale.jpg" alt="cloud-whale">
+    
+                <div class="details-component">
+                    <p class="details-title">Cloud Whale</p>
+    
+                    <p class="details-author">by Ria</p>
+    
+                    <p class="details-desc">A majestic, whale-shaped cloud gracefully floats across a clear blue sky, capturing the essence of imagination and
+                    wonder. The cloud's soft, billowing edges resemble the gentle curves of a whale, complete with a prominent tail and
+                    fins. The sunlight filters through, casting a magical, radiant glow around the cloud, enhancing its ethereal beauty.
+                    Below, a serene landscape stretches out, reflecting the whale cloud in tranquil waters. The scene evokes a sense of
+                    serenity and awe, as if the sky itself is home to this magnificent, cloud-formed creature.</p>
+    
+                    <p class="tag-text">Related tag:</p>
+    
+                    <div class="details-tag">
+                        <button>Cloud Whale</button>
+                        <button>Majestic Sky</button>
+                        <button>Sky Wonder</button>
+                        <button>Magical Glow</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end image modal -->
+
+    <!-- footer -->
+    <div class="footer-parent">
+    
+        <div class="f-content">
+    
+            <img src="../assets/webAssets/logo-white.svg" alt="logo">
+    
+            <div class="footer-content">
+    
+                <div class="footer-config">
+                    <h3>Legal</h3>
+                    <p>Terms of use</p>
+                    <p>License agreement</p>
+                    <p>Privacy policy</p>
+                    <p>Copyright information</p>
+                    <p>Cookies policy</p>
+                    <p>Cookies settings</p>
+                </div>
+    
+                <div class="footer-config">
+                    <h3>Information</h3>
+                    <p>About us</p>
+                    <p>Events</p>
+                    <p>Search trends</p>
+                    <p>Submit content</p>
+                    <p>Blog</p>
+                    <p>Careers</p>
+                </div>
+    
+                <div class="footer-config">
+                    <h3>Support</h3>
+                    <p>FAQ</p>
+                    <p>Contact</p>
+                </div>
+    
+                <div class="footer-config">
+                    <h3>Social</h3>
+                    <p>Instagram</p>
+                    <p>Discord</p>
+                    <p>Twitter</p>
+                    <p>Linkedin</p>
+                    <p>Pinterest</p>
+                </div>
+    
+            </div>
+    
+            <div class="dropdown">
+                <button onclick="showFooter('legal','down-arrow1')" class="dropbtn">Legal
+                    <img src="../assets/webAssets/down-arrow.svg" alt="down-arrow" id="down-arrow1">
+                </button>
+                <div id="legal" class="dropdown-content">
+                    <p>Terms of use</p>
+                    <p>License agreement</p>
+                    <p>Privacy policy</p>
+                    <p>Copyright information</p>
+                    <p>Cookies policy</p>
+                    <p>Cookies settings</p>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <button onclick="showFooter('information','down-arrow2')" class="dropbtn">Information
+                    <img src="../assets/webAssets/down-arrow.svg" alt="down-arrow" id="down-arrow2">
+                </button>
+                <div id="information" class="dropdown-content">
+                    <p>About us</p>
+                    <p>Events</p>
+                    <p>Search trends</p>
+                    <p>Submit content</p>
+                    <p>Blog</p>
+                    <p>Careers</p>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <button onclick="showFooter('support','down-arrow3')" class="dropbtn">Support
+                    <img src="../assets/webAssets/down-arrow.svg" alt="down-arrow" id="down-arrow3">
+                </button>
+                <div id="support" class="dropdown-content">
+                    <p>FAQ</p>
+                    <p>Contact</p>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <button onclick="showFooter('social','down-arrow4')" class="dropbtn">Social
+                    <img src="../assets/webAssets/down-arrow.svg" alt="down-arrow" id="down-arrow4">
+                </button>
+                <div id="social" class="dropdown-content">
+                    <p>Instagram</p>
+                    <p>Discord</p>
+                    <p>Twitter</p>
+                    <p>Linkedin</p>
+                    <p>Pinterest</p>
+                </div>
+            </div>
+    
+        </div>
+    
+        <hr class="footer-hr">
+    
+        <p class="copyright-info">&copy; 2025 Picverse, All rights reserved.</p>
+    
+    </div>
+    <!-- end footer -->
+
+</body>
+
+</html>

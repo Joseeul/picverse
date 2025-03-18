@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picverse | Submission</title>
+
+    <link rel="stylesheet" href="../style/submissionpageStyle.css">
+    <link rel="stylesheet" href="../style/configuration.css">
+    <link rel="stylesheet" href="../style/responsive.css">
+
+    <link rel="icon" type="image/x-icon" href="../assets/webAssets/favicon.svg">
+
+    <script src="../script/responsiveScript.js"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar-parent">
+    
+        <div class="left-item">
+    
+            <a href="../index.html"><img class="logo" src="../assets/webAssets/logo.svg" alt="logo"></a>
+    
+            <div class="menu">
+                <a href="../index.html">Home</a>
+                <a href="../pages/galleryPage.html">Gallery</a>
+                <a href="../pages/forumPage.html">Forum</a>
+                <a href="../pages/submissionPage.html">Contribution</a>
+                <a href="../pages/aboutusPage.html">About Us</a>
+            </div>
+    
+        </div>
+    
+        <div class="right-item">
+    
+            <div class="icon-container">
+                <a href="#"><img class="icon" src="../assets/webAssets/linkedin.svg" alt="linkedin"></a>
+    
+                <a href="https://www.instagram.com/joseandreas54?igsh=MXc0cWtyaHA0NmluaQ%3D%3D&utm_source=qr"
+                    target="_blank"><img class="icon" src="../assets/webAssets/instagram.svg" alt="instagram"></a>
+    
+                <a href="https://discord.gg/7ZzCmjPF" target="_blank"><img class="icon" src="../assets/webAssets/discord.svg"
+                        alt="discord"></a>
+    
+            </div>
+    
+            <button class="default-button btn-login">Log In</button>
+    
+        </div>
+    
+        <div class="responsive-navbar-parent">
+            <div class="menu-container-parent">
+                <img src="../assets/webAssets/hamburger-menu.svg" alt="hamburger" class="hamburger"
+                    onclick="showNavbar('nav_menu')">
+    
+                <a href="../index.html"><img src="../assets/webAssets/logo.svg" alt="logo" class="logo"></a>
+            </div>
+    
+            <button class="default-button btn-login">Log In</button>
+        </div>
+    
+    </div>
+    <!-- end navbar -->
+    
+    <!-- responsive-navbar -->
+    <div class="responsive-navbar-menu" id="nav_menu">
+        <div class="menu-container">
+            <a href="../index.html">Home</a>
+            <a href="../pages/galleryPage.html">Gallery</a>
+            <a href="../pages/forumPage.html">Forum</a>
+            <a href="../pages/submissionPage.html">Contribution</a>
+            <a href="../pages/aboutusPage.html">About Us</a>
+        </div>
+    </div>
+    <!-- end responsive navbar -->
+
+    <!-- intro -->
+    <div class="intro-parent">
+        <img src="../assets/img/Submission Page.png" alt="submission-page">
+        <p>Upload Your Works and Discuss It With<br>Other Artist Together!</p>
+    </div>
+    <!-- end intro -->
+
+    <!-- warning -->
+    <div class="warning-parent">
+        <p>You must fill in some information about your work in the following form. Please note that by uploading your
+            work on
+            Picverse, you agree that your work will be published and anyone can see, comment, and like the work you
+            create. Make
+            sure your work does not contain elements of violence or sexuality, if your work is found to contain one of
+            these
+            elements, Picverse has the right to deactivate your account and delete your work without prior notice.</p>
+    </div>
+    <!-- end warning -->
+
+    <!-- form -->
+    <div class="form-parent">
+
+        <div class="form-content">
+            <form action="#">
+                <div class="form-content-parent">
+                    <p>Email<span class="required">*</span></p>
+
+                    <input type="text" class="form-input" id="email">
+                </div>
+
+                <div class="form-content-parent">
+                    <p>Title<span class="required">*</span></p>
+                
+                    <input type="text" class="form-input" id="title">
+                </div>
+
+                <div class="form-content-parent">
+                    <p>Description<span class="required">*</span></p>
+                
+                    <input type="text" class="form-input" id="description">
+                </div>
+
+                <div class="form-content-parent">
+                    <p>Add Tag<span class="required">*</span></p>
+                
+                    <input type="text" class="form-input" id="tag">
+                </div>
+
+                <div class="form-content-parent">
+                    <div class="type-parent">
+                        <p>Art Type<span class="required">*</span></p>
+
+                        <div class="tooltip">
+                            <span class="tooltiptext">Choose AI Generated if your art made by AI</span>
+
+                            <img src="../assets/webAssets/question.svg" alt="question">
+                        </div>
+                    </div>
+
+                    <input type="radio" name="type" id="type-ai-generated">
+                    <label for="art-type" class="radio-label">AI Generated</label>
+
+                    <br>
+
+                    <input type="radio" name="type" id="type-original">
+                    <label for="art-type" class="radio-label">Original Art</label>
+                </div>
+
+                <input type="submit" value="Submit" class="submit-button">
+            </form>
+        </div>
+
+        <div class="form-upload">
+            <div class="upload-content">
+                <img src="../assets/webAssets/cloud.svg" alt="cloud">
+                <p>Drag files to upload<br>or</p>
+                <button class="default-button bf-button">Browse File</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- end form -->
+
+    <!-- footer -->
+    <div class="footer-parent">
+    
+        <div class="f-content">
+    
+            <img src="../assets/webAssets/logo-white.svg" alt="logo">
+    
+            <div class="footer-content">
+    
+                <div class="footer-config">
+                    <h3>Legal</h3>
+                    <p>Terms of use</p>
+                    <p>License agreement</p>
+                    <p>Privacy policy</p>
+                    <p>Copyright information</p>
+                    <p>Cookies policy</p>
+                    <p>Cookies settings</p>
+                </div>
+    
+                <div class="footer-config">
+                    <h3>Information</h3>
+                    <p>About us</p>
+                    <p>Events</p>
+                    <p>Search trends</p>
+                    <p>Submit content</p>
+                    <p>Blog</p>
+                    <p>Careers</p>
+                </div>
+    
+                <div class="footer-config">
+                    <h3>Support</h3>
+                    <p>FAQ</p>
+                    <p>Contact</p>
+                </div>
+    
+                <div class="footer-config">
+                    <h3>Social</h3>
+                    <p>Instagram</p>
+                    <p>Discord</p>
+                    <p>Twitter</p>
+                    <p>Linkedin</p>
+                    <p>Pinterest</p>
+                </div>
+    
+            </div>
+    
+            <div class="dropdown">
+                <button onclick="showFooter('legal','down-arrow1')" class="dropbtn">Legal
+                    <img src="../assets/webAssets/down-arrow.svg" alt="down-arrow" id="down-arrow1">
+                </button>
+                <div id="legal" class="dropdown-content">
+                    <p>Terms of use</p>
+                    <p>License agreement</p>
+                    <p>Privacy policy</p>
+                    <p>Copyright information</p>
+                    <p>Cookies policy</p>
+                    <p>Cookies settings</p>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <button onclick="showFooter('information','down-arrow2')" class="dropbtn">Information
+                    <img src="../assets/webAssets/down-arrow.svg" alt="down-arrow" id="down-arrow2">
+                </button>
+                <div id="information" class="dropdown-content">
+                    <p>About us</p>
+                    <p>Events</p>
+                    <p>Search trends</p>
+                    <p>Submit content</p>
+                    <p>Blog</p>
+                    <p>Careers</p>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <button onclick="showFooter('support','down-arrow3')" class="dropbtn">Support
+                    <img src="../assets/webAssets/down-arrow.svg" alt="down-arrow" id="down-arrow3">
+                </button>
+                <div id="support" class="dropdown-content">
+                    <p>FAQ</p>
+                    <p>Contact</p>
+                </div>
+            </div>
+    
+            <div class="dropdown">
+                <button onclick="showFooter('social','down-arrow4')" class="dropbtn">Social
+                    <img src="../assets/webAssets/down-arrow.svg" alt="down-arrow" id="down-arrow4">
+                </button>
+                <div id="social" class="dropdown-content">
+                    <p>Instagram</p>
+                    <p>Discord</p>
+                    <p>Twitter</p>
+                    <p>Linkedin</p>
+                    <p>Pinterest</p>
+                </div>
+            </div>
+    
+        </div>
+    
+        <hr class="footer-hr">
+    
+        <p class="copyright-info">&copy; 2025 Picverse, All rights reserved.</p>
+    
+    </div>
+    <!-- end footer -->
+
+</body>
+
+</html>

@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picverse | Forum</title>
+
+    <link rel="stylesheet" href="../style/forumpageStyle.css">
+    <link rel="stylesheet" href="../style/configuration.css">
+    <link rel="stylesheet" href="../style/responsive.css">
+    <link rel="stylesheet" href="../style/gallerypageStyle.css">
+
+    <link rel="icon" type="image/x-icon" href="../assets/webAssets/favicon.svg">
+
+    <script src="../script/responsiveScript.js"></script>
+    <script src="../script/gallerypageScript.js"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar-parent">
+
+        <div class="left-item">
+
+            <a href="../index.html"><img class="logo" src="../assets/webAssets/logo.svg" alt="logo"></a>
+
+            <div class="menu">
+                <a href="../index.html">Home</a>
+                <a href="../pages/galleryPage.html">Gallery</a>
+                <a href="../pages/forumPage.html">Forum</a>
+                <a href="../pages/submissionPage.html">Contribution</a>
+                <a href="../pages/aboutusPage.html">About Us</a>
+            </div>
+
+        </div>
+
+        <div class="right-item">
+
+            <div class="icon-container">
+                <a href="#"><img class="icon" src="../assets/webAssets/linkedin.svg" alt="linkedin"></a>
+
+                <a href="https://www.instagram.com/joseandreas54?igsh=MXc0cWtyaHA0NmluaQ%3D%3D&utm_source=qr"
+                    target="_blank"><img class="icon" src="../assets/webAssets/instagram.svg" alt="instagram"></a>
+
+                <a href="https://discord.gg/7ZzCmjPF" target="_blank"><img class="icon"
+                        src="../assets/webAssets/discord.svg" alt="discord"></a>
+
+            </div>
+
+            <button class="default-button btn-login">Log In</button>
+
+        </div>
+
+        <div class="responsive-navbar-parent">
+            <div class="menu-container-parent">
+                <img src="../assets/webAssets/hamburger-menu.svg" alt="hamburger" class="hamburger"
+                    onclick="showNavbar('nav_menu')">
+
+                <a href="../index.html"><img src="../assets/webAssets/logo.svg" alt="logo" class="logo"></a>
+            </div>
+
+            <button class="default-button btn-login">Log In</button>
+        </div>
+
+    </div>
+    <!-- end navbar -->
+
+    <!-- responsive-navbar -->
+    <div class="responsive-navbar-menu" id="nav_menu">
+        <div class="menu-container">
+            <a href="../index.html">Home</a>
+            <a href="../pages/galleryPage.html">Gallery</a>
+            <a href="../pages/forumPage.html">Forum</a>
+            <a href="../pages/submissionPage.html">Contribution</a>
+            <a href="../pages/aboutusPage.html">About Us</a>
+        </div>
+    </div>
+    <!-- end responsive navbar -->
+
+    <!-- warning -->
+    <div class="warning-parent">
+        <p>Before you create a new discussion forum, make sure you know that the forum is public and can be seen by all
+            Picverse
+            users. Therefore, Picverse really hopes that users can create forums wisely and still respect other people's
+            opinions.
+            Happy discussing!</p>
+    </div>
+    <!-- end warning -->
+
+    <!-- search bar -->
+    <div class="search-bar-parent">
+
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search topic">
+            <button class="btn-search default-button">Search</button>
+        </div>
+
+    </div>
+    <!-- end search bar -->
+
+    <!-- forum -->
+    <div class="forum-parent">
+
+        <div class="profile-activities">
+
+            <div class="profile-content">
+
+                <div class="user-profile">
+                    <p class="p-text">Your Profile</p>
+
+                    <div class="img-name">
+                        <img src="../assets/img/profilePicture/pp4.jpg" alt="profile-3">
+
+                        <div class="name-usrname">
+                            <p class="p-name">Jose Andreas</p>
+                            <p class="p-usr gradient-text">Master Artist</p>
+                        </div>
+                    </div>
+
+                    <div class="profile-status">
+                        <div class="following">
+                            <p class="status-stat">766</p>
+                            <p class="status-text">Following</p>
+                        </div>
+
+                        <div class="follower">
+                            <p class="status-stat">5.328</p>
+                            <p class="status-text">Followers</p>
+                        </div>
+
+                        <div class="likes">
+                            <p class="status-stat">10.1k</p>
+                            <p class="status-text">Likes</p>
+                        </div>
+                    </div>
+
+                    <button class="default-button btn-profile">Edit Profile</button>
+                </div>
+
+                <div class="inbox-parent">
+
+                    <div class="notification">
+                        <p class="n-text">Inbox</p>
+                        <div class="n-total">
+                            <p class="n-tot">6</p>
+                        </div>
+                    </div>
+
+                    <div class="notification-content">
+                        <p class="notification-text"><span class="username">@ariyaaup</span> Liked your post <span
+                                class="time">1m</span></p>
+
+                        <p class="notification-text"><span class="username">@zyrae</span> Started following you <span
+                                class="time">5m</span></p>
+
+                        <p class="notification-text"><span class="username">@rntiianae</span> Liked your post <span
+                                class="time">12m</span></p>
+
+                        <p class="notification-text"><span class="username">@exwhyzed</span> Reply your comment <span
+                                class="time">30m</span></p>
+
+                        <p class="notification-text"><span class="username">@badakasli</span> Liked your post <span
+                                class="time">45m</span></p>
+
+                        <p class="notification-text"><span class="username">@bangpin</span> Reply your comment <span
+                                class="time">1h</span></p>
+
+                        <p class="notification-text"><span class="username">@aduhaii</span> Started following you <span
+                                class="time">1h</span></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="main-forum">
+            <div class="forum-content">
+
+                <div class="top-info">
+                    <div class="sorting">
+                        <img src="../assets/webAssets/filter.svg" alt="filter">
+                        <p>Most Popular</p>
+                    </div>
+
+                    <p>Last Updated: 5m ago</p>
+                </div>
+
+                <div class="new-topic">
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="Make new topic...">
+                        <button class="btn-search default-button">Post</button>
+                    </div>
+                </div>
+
+                <div class="people-forum-parent">
+
+                    <div class="people-forum">
+
+                        <div class="user-info">
+                            <div class="profile-name">
+                                <img src="../assets/img/profilePicture/pp5.jpg" alt="profile-3">
+
+                                <div class="name-tag">
+                                    <p class="name">Jessica</p>
+                                    <p class="tag gradient-text">Newbie Artist</p>
+                                </div>
+                            </div>
+                            <p class="date">2025-01-18</p>
+                        </div>
+
+                        <div class="forum-detail">
+
+                            <p class="f-title">How to make good and correct images with AI</p>
+
+                            <p class="f-desc">How to create good and correct images using artificial intelligence (AI)
+                                technology? Please provide a step-by-step guide
+                                that includes choosing the right tools, techniques used, and tips for producing
+                                high-quality images with AI.</p>
+
+                        </div>
+
+                        <div class="forum-comments">
+                            <img src="../assets/webAssets/comment.png" alt="comment">
+
+                            <p>560 comments</p>
+                        </div>
+
+                    </div>
+
+                    <div class="people-forum">
+
+                        <div class="user-info">
+                            <div class="profile-name">
+                                <img src="../assets/img/profilePicture/pp4.jpg" alt="profile-3">
+
+                                <div class="name-tag">
+                                    <p class="name">Hansen</p>
+                                    <p class="tag gradient-text">Professional Artist</p>
+                                </div>
+                            </div>
+                            <p class="date">2025-01-12</p>
+                        </div>
+
+                        <div class="forum-detail">
+
+                            <p class="f-title">Exploring Personal Expression Through Art</p>
+
+                            <p class="f-desc">How do you use art to express your personal experiences, emotions, or
+                                beliefs? What mediums and techniques do you find
+                                most effective in conveying your unique perspective?
+                            </p>
+
+                        </div>
+
+                        <div class="forum-comments">
+                            <img src="../assets/webAssets/comment.png" alt="comment">
+
+                            <p>342 comments</p>
+                        </div>
+
+                    </div>
+
+                    <div class="people-forum">
+
+                        <div class="user-info">
+                            <div class="profile-name">
+                                <img src="../assets/img/profilePicture/pp3.jpg" alt="profile-3">
+
+                                <div class="name-tag">
+                                    <p class="name">Alexis</p>
+                                    <p class="tag gradient-text">Professional Artist</p>
+                                </div>
+                            </div>
+                            <p class="date">2025-01-8</p>
+                        </div>
+
+                        <div class="forum-detail">
+
+                            <p class="f-title">The Intersection of Art and Identity</p>
+
+                            <p class="f-desc">How do you believe art reflects and shapes personal identity? Are there
+                                specific artists, movements, or mediums that
+                                have particularly resonated with you in expressing your own identity?
+                            </p>
+
+                        </div>
+
+                        <div class="forum-comments">
+                            <img src="../assets/webAssets/comment.png" alt="comment">
+
+                            <p>83 comments</p>
+                        </div>
+
+                    </div>
+
+                    <div class="people-forum">
+
+                        <div class="user-info">
+                            <div class="profile-name">
+                                <img src="../assets/img/profilePicture/pp2.jpg" alt="profile-3">
+
+                                <div class="name-tag">
+                                    <p class="name">Michael</p>
+                                    <p class="tag gradient-text">Newbie Artist</p>
+                                </div>
+                            </div>
+                            <p class="date">2025-02-1</p>
+                        </div>
+
+                        <div class="forum-detail">
+
+                            <p class="f-title">Art as a Catalyst for Social Change</p>
+
+                            <p class="f-desc">In what ways do you think art can influence society and drive social
+                                change? Can you share examples of artworks or
+                                artists that have inspired movements or provoked thought on important social issues?
+                            </p>
+
+                        </div>
+
+                        <div class="forum-comments">
+                            <img src="../assets/webAssets/comment.png" alt="comment">
+
+                            <p>918 comments</p>
+                        </div>
+
+                    </div>
+
+                    <div class="people-forum">
+
+                        <div class="user-info">
+                            <div class="profile-name">
+                                <img src="../assets/img/profilePicture/pp1.jpg" alt="profile-3">
+
+                                <div class="name-tag">
+                                    <p class="name">Emma</p>
+                                    <p class="tag gradient-text">Master Artist</p>
+                                </div>
+                            </div>
+                            <p class="date">2025-02-8</p>
+                        </div>
+
+                        <div class="forum-detail">
+
+                            <p class="f-title">The Role of Color in Emotional Expression</p>
+
+                            <p class="f-desc">How do you use color to convey emotions in your artwork? Are there
+                                specific color palettes or combinations that you find
+                                particularly effective in expressing certain moods or feelings?
+                            </p>
+
+                        </div>
+
+                        <div class="forum-comments">
+                            <img src="../assets/webAssets/comment.png" alt="comment">
+
+                            <p>367 comments</p>
+                        </div>
+
+                    </div>
+
+                    <div class="people-forum">
+
+                        <div class="user-info">
+                            <div class="profile-name">
+                                <img src="../assets/img/profilePicture/pp4.jpg" alt="profile-3">
+
+                                <div class="name-tag">
+                                    <p class="name">Lina</p>
+                                    <p class="tag gradient-text">Master Artist</p>
+                                </div>
+                            </div>
+                            <p class="date">2025-02-21</p>
+                        </div>
+
+                        <div class="forum-detail">
+
+                            <p class="f-title">Exploring Abstract Art: Beyond the Visible</p>
+
+                            <p class="f-desc">What draws you to abstract art? How do you interpret and create abstract
+                                pieces, and what emotions or concepts do you
+                                aim to convey through non-representational forms and techniques?
+                            </p>
+
+                        </div>
+
+                        <div class="forum-comments">
+                            <img src="../assets/webAssets/comment.png" alt="comment">
+
+                            <p>143 comments</p>
+                        </div>
+
+                    </div>
+
+                    <div class="people-forum">
+
+                        <div class="user-info">
+                            <div class="profile-name">
+                                <img src="../assets/img/profilePicture/pp2.jpg" alt="profile-3">
+
+                                <div class="name-tag">
+                                    <p class="name">David</p>
+                                    <p class="tag gradient-text">Newbie Artist</p>
+                                </div>
+                            </div>
+                            <p class="date">2025-02-23</p>
+                        </div>
+
+                        <div class="forum-detail">
+
+                            <p class="f-title">The Influence of Cultural Heritage in Art</p>
+
+                            <p class="f-desc">How does your cultural background and heritage influence your art? Are
+                                there particular traditions, symbols, or stories
+                                that you incorporate into your work to reflect your cultural identity?
+                            </p>
+
+                        </div>
+
+                        <div class="forum-comments">
+                            <img src="../assets/webAssets/comment.png" alt="comment">
+
+                            <p>831 comments</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="active-user">
+            <div class="user-content">
+
+                <div class="user-list">
+                    <p class="active-section">Currently Active Artist (10)</p>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp1.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Rina Wijaya</p>
+                                <p class="gradient-text active-tag">Professional Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp2.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Andi Prasetyo</p>
+                                <p class="gradient-text active-tag">Newbie Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp3.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Budi Santoso</p>
+                                <p class="gradient-text active-tag">Professional Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp4.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Rizky Kurniawan</p>
+                                <p class="gradient-text active-tag">Master Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp5.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Dwi Susanto</p>
+                                <p class="gradient-text active-tag">Newbie Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp3.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Lestari Ananda</p>
+                                <p class="gradient-text active-tag">Newbie Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp1.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Hendri Saputra</p>
+                                <p class="gradient-text active-tag">Professional Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp2.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Maya Sari</p>
+                                <p class="gradient-text active-tag">Master Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp5.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Agus Riyadi</p>
+                                <p class="gradient-text active-tag">Master Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp4.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Ayu Puspita</p>
+                                <p class="gradient-text active-tag">Professional Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- end forum -->
+
+    <!-- responsive forum -->
+    <div class="responsive-forum-parent">
+        <div class="top-activity-parent">
+            <div class="r-active-user-parent">
+                <div class="user-list">
+
+                    <div class="user-active">
+                        <div class="profile-active"
+                            onclick="showModal(my_profile, modal1, document.getElementsByClassName('close')[0])"
+                            id="my_profile">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp1.jpg" alt="user-active">
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Jose Andreas</p>
+                                <p class="gradient-text active-tag">Master Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp1.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Rina Wijaya</p>
+                                <p class="gradient-text active-tag">Professional Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp2.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Andi Prasetyo</p>
+                                <p class="gradient-text active-tag">Newbie Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp3.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Budi Santoso</p>
+                                <p class="gradient-text active-tag">Professional Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp4.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Rizky Kurniawan</p>
+                                <p class="gradient-text active-tag">Master Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp5.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Dwi Susanto</p>
+                                <p class="gradient-text active-tag">Newbie Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp3.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Lestari Ananda</p>
+                                <p class="gradient-text active-tag">Newbie Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp1.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Hendri Saputra</p>
+                                <p class="gradient-text active-tag">Professional Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp2.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Maya Sari</p>
+                                <p class="gradient-text active-tag">Master Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp5.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Agus Riyadi</p>
+                                <p class="gradient-text active-tag">Master Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-active">
+                        <div class="profile-active">
+                            <div class="image-active">
+                                <img src="../assets/img/profilePicture/pp4.jpg" alt="user-active">
+
+                                <div class="active-indicator"></div>
+                            </div>
+
+                            <div class="active-detail">
+                                <p class="active-name">Ayu Puspita</p>
+                                <p class="gradient-text active-tag">Professional Artist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="main-forum">
+            <div class="responsive-forum-content">
+
+                <div class="top-info">
+                    <div class="sorting">
+                        <img src="../assets/webAssets/filter.svg" alt="filter">
+                        <p>Most Popular</p>
+                    </div>
+
+                    <p>Last Updated: 5m ago</p>
+                </div>
+
+                <div class="new-topic">
+                    <div class="search-box">
+                        <input type="text" class="search-input" placeholder="Make new topic...">
+                        <button class="btn-search default-button">Post</button>
+                    </div>
+                </div>
+
+                <div class="people-forum-parent">
+
+                    <div class="people-forum">
+
+                        <div class="user-info">
+                            <div class="profile-name">
+                                <img src="../assets/img/profilePicture/pp5.jpg" alt="profile-3">
+
+                                <div class="name-tag">
+                                    <p class="name">Jessica</p>
+                                    <p class="tag gradient-text">Newbie Artist</p>
+                                </div>
+                            </div>
+                            <p class="date">2025-01-18</p>
+                        </div>
+
+                        <div class="forum-detail">
+
+                            <p class="f-title">How to make good and correct images with AI</p>
+
+                            <p class="f-desc">How to create good and correct images using artificial intelligence (AI)
+                                technology? Please provide a step-by-step guide
+                                that includes choosing the right tools, techniques used, and tips for producing
+                                high-quality images with AI.</p>
+
+                        </div>
+
+                        <div class="forum-comments">
+                            <img src="../assets/webAssets/comment.png" alt="comment">
+
+                            <p>560 comments</p>
+                        </div>
+
+                    </div>
+
+                    <div class="people-forum">
+
+                        <div class="user-info">
+                            <div class="profile-name">
+                                <img src="../assets/img/profilePicture/pp4.jpg" alt="profile-3">
+
+                                <div class="name-tag">
+                                    <p class="name">Hansen</p>
+                                    <p class="tag gradient-text">Professional Artist</p>
+                                </div>
+                            </div>
+                            <p class="date">2025-01-12</p>
+                        </div>
+
+                        <div class="forum-detail">
+
+                            <p class="f-title">Exploring Personal Expression Through Art</p>
+
+                            <p class="f-desc">How do you use art to express your personal experiences, emotions, or
+                                beliefs? What mediums and techniques do you find
+                                most effective in conveying your unique perspective?
+                            </p>
+
+                        </div>
+
+                        <div class="forum-comments">
+                            <img src="../assets/webAssets/comment.png" alt="comment">
+
+                            <p>342 comments</p>
+                        </div>
+
+                    </div>
+
+                    <div class="people-forum">
+
+                        <div class="user-info">
+                            <div class="profile-name">
+                                <img src="../assets/img/profilePicture/pp3.jpg" alt="profile-3">
+
+                                <div class="name-tag">
+                                    <p class="name">Alexis</p>
+                                    <p class="tag gradient-text">Professional Artist</p>
+                                </div>
+                            </div>
+                            <p class="date">2025-01-8</p>
+                        </div>
+
+                        <div class="forum-detail">
+
+                            <p class="f-title">The Intersection of Art and Identity</p>
+
+                            <p class="f-desc">How do you believe art reflects and shapes personal identity? Are there
+                                specific artists, movements, or mediums that
+                                have particularly resonated with you in expressing your own identity?
+                            </p>
+
+                        </div>
+
+                        <div class="forum-comments">
+                            <img src="../assets/webAssets/comment.png" alt="comment">
+
+                            <p>83 comments</p>
+                        </div>
+
+                    </div>
+
+                    <div class="people-forum">
+
+                        <div class="user-info">
+                            <div class="profile-name">
+                                <img src="../assets/img/profilePicture/pp2.jpg" alt="profile-3">
+
+                                <div class="name-tag">
+                                    <p class="name">Michael</p>
+                                    <p class="tag gradient-text">Newbie Artist</p>
+                                </div>
+                            </div>
+                            <p class="date">2025-02-1</p>
+                        </div>
+
+                        <div class="forum-detail">
+
+                            <p class="f-title">Art as a Catalyst for Social Change</p>
+
+                            <p class="f-desc">In what ways do you think art can influence society and drive social
+                                change? Can you share examples of artworks or
+                                artists that have inspired movements or provoked thought on important social issues?
+                            </p>
+
+                        </div>
+
+                        <div class="forum-comments">
+                            <img src="../assets/webAssets/comment.png" alt="comment">
+
+                            <p>918 comments</p>
+                        </div>
+
+                    </div>
+
+                    <div class="people-forum">
+
+                        <div class="user-info">
+                            <div class="profile-name">
+                                <img src="../assets/img/profilePicture/pp1.jpg" alt="profile-3">
+
+                                <div class="name-tag">
+                                    <p class="name">Emma</p>
+                                    <p class="tag gradient-text">Master Artist</p>
+                                </div>
+                            </div>
+                            <p class="date">2025-02-8</p>
+                        </div>
+
+                        <div class="forum-detail">
+
+                            <p class="f-title">The Role of Color in Emotional Expression</p>
+
+                            <p class="f-desc">How do you use color to convey emotions in your artwork? Are there
+                                specific color palettes or combinations that you find
+                                particularly effective in expressing certain moods or feelings?
+                            </p>
+
+                        </div>
+
+                        <div class="forum-comments">
+                            <img src="../assets/webAssets/comment.png" alt="comment">
+
+                            <p>367 comments</p>
+                        </div>
+
+                    </div>
+
+                    <div class="people-forum">
+
+                        <div class="user-info">
+                            <div class="profile-name">
+                                <img src="../assets/img/profilePicture/pp4.jpg" alt="profile-3">
+
+                                <div class="name-tag">
+                                    <p class="name">Lina</p>
+                                    <p class="tag gradient-text">Master Artist</p>
+                                </div>
+                            </div>
+                            <p class="date">2025-02-21</p>
+                        </div>
+
+                        <div class="forum-detail">
+
+                            <p class="f-title">Exploring Abstract Art: Beyond the Visible</p>
+
+                            <p class="f-desc">What draws you to abstract art? How do you interpret and create abstract
+                                pieces, and what emotions or concepts do you
+                                aim to convey through non-representational forms and techniques?
+                            </p>
+
+                        </div>
+
+                        <div class="forum-comments">
+                            <img src="../assets/webAssets/comment.png" alt="comment">
+
+                            <p>143 comments</p>
+                        </div>
+
+                    </div>
+
+                    <div class="people-forum">
+
+                        <div class="user-info">
+                            <div class="profile-name">
+                                <img src="../assets/img/profilePicture/pp2.jpg" alt="profile-3">
+
+                                <div class="name-tag">
+                                    <p class="name">David</p>
+                                    <p class="tag gradient-text">Newbie Artist</p>
+                                </div>
+                            </div>
+                            <p class="date">2025-02-23</p>
+                        </div>
+
+                        <div class="forum-detail">
+
+                            <p class="f-title">The Influence of Cultural Heritage in Art</p>
+
+                            <p class="f-desc">How does your cultural background and heritage influence your art? Are
+                                there particular traditions, symbols, or stories
+                                that you incorporate into your work to reflect your cultural identity?
+                            </p>
+
+                        </div>
+
+                        <div class="forum-comments">
+                            <img src="../assets/webAssets/comment.png" alt="comment">
+
+                            <p>831 comments</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end responsive forum -->
+
+    <!-- detail modal -->
+    <div id="modal1" class="r-modal">
+        <div class="r-modal-content">
+            <span class="close r-close">&times;</span>
+
+            <div class="user-profile">
+                <p class="p-text r-p-text">Your Profile</p>
+
+                <div class="r-img-name">
+                    <img src="../assets/img/profilePicture/pp3.jpg" alt="profile-3" class="r-image">
+
+                    <div class="name-usrname">
+                        <p class="p-name r-p-name">Jose Andreas</p>
+                        <p class="p-usr gradient-text r-p-usr">Master Artist</p>
+                    </div>
+                </div>
+
+                <div class="profile-status">
+                    <div class="following">
+                        <p class="status-stat">766</p>
+                        <p class="status-text">Following</p>
+                    </div>
+
+                    <div class="follower">
+                        <p class="status-stat">5.328</p>
+                        <p class="status-text">Followers</p>
+                    </div>
+
+                    <div class="likes">
+                        <p class="status-stat">10.1k</p>
+                        <p class="status-text">Likes</p>
+                    </div>
+                </div>
+
+                <button class="default-button btn-profile">Edit Profile</button>
+            </div>
+
+            <div class="inbox-parent">
+
+                <div class="notification">
+                    <p class="n-text">Inbox</p>
+                    <div class="n-total">
+                        <p class="n-tot">6</p>
+                    </div>
+                </div>
+
+
+                <p class="notification-text"><span class="username">@ariyaaup</span> Liked your post <span
+                        class="time">1m</span></p>
+
+                <p class="notification-text"><span class="username">@zyrae</span> Started following you <span
+                        class="time">5m</span></p>
+
+                <p class="notification-text"><span class="username">@rntiianae</span> Liked your post <span
+                        class="time">12m</span></p>
+
+                <p class="notification-text"><span class="username">@exwhyzed</span> Reply your comment <span
+                        class="time">30m</span></p>
+
+                <p class="notification-text"><span class="username">@badakasli</span> Liked your post <span
+                        class="time">45m</span></p>
+
+                <p class="notification-text"><span class="username">@bangpin</span> Reply your comment <span
+                        class="time">1h</span></p>
+
+                <p class="notification-text"><span class="username">@aduhaii</span> Started following you <span
+                        class="time">1h</span></p>
+
+            </div>
+        </div>
+    </div>
+    <!-- end detail modal -->
+
+</body>
+
+</html>
