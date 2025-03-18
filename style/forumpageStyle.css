@@ -393,3 +393,7 @@
 .responsive-forum-parent{
     display: none;
 }
+
+.r-modal{
+    display: none;
+}
