@@ -19,11 +19,11 @@
 
     <!-- navbar -->
     <div class="navbar-parent">
-    
+
         <div class="left-item">
-    
+
             <a href="../index.html"><img class="logo" src="../assets/webAssets/logo.svg" alt="logo"></a>
-    
+
             <div class="menu">
                 <a href="../index.html">Home</a>
                 <a href="../pages/galleryPage.html">Gallery</a>
@@ -31,40 +31,40 @@
                 <a href="../pages/submissionPage.html">Contribution</a>
                 <a href="../pages/aboutusPage.html">About Us</a>
             </div>
-    
+
         </div>
-    
+
         <div class="right-item">
-    
+
             <div class="icon-container">
                 <a href="#"><img class="icon" src="../assets/webAssets/linkedin.svg" alt="linkedin"></a>
-    
+
                 <a href="https://www.instagram.com/joseandreas54?igsh=MXc0cWtyaHA0NmluaQ%3D%3D&utm_source=qr"
                     target="_blank"><img class="icon" src="../assets/webAssets/instagram.svg" alt="instagram"></a>
-    
-                <a href="https://discord.gg/7ZzCmjPF" target="_blank"><img class="icon" src="../assets/webAssets/discord.svg"
-                        alt="discord"></a>
-    
+
+                <a href="https://discord.gg/7ZzCmjPF" target="_blank"><img class="icon"
+                        src="../assets/webAssets/discord.svg" alt="discord"></a>
+
             </div>
-    
+
             <button class="default-button btn-login">Log In</button>
-    
+
         </div>
-    
+
         <div class="responsive-navbar-parent">
             <div class="menu-container-parent">
                 <img src="../assets/webAssets/hamburger-menu.svg" alt="hamburger" class="hamburger"
                     onclick="showNavbar('nav_menu')">
-    
+
                 <a href="../index.html"><img src="../assets/webAssets/logo.svg" alt="logo" class="logo"></a>
             </div>
-    
+
             <button class="default-button btn-login">Log In</button>
         </div>
-    
+
     </div>
     <!-- end navbar -->
-    
+
     <!-- responsive-navbar -->
     <div class="responsive-navbar-menu" id="nav_menu">
         <div class="menu-container">
@@ -100,53 +100,55 @@
     <div class="form-parent">
 
         <div class="form-content">
-            <form action="#">
-                <div class="form-content-parent">
-                    <p>Email<span class="required">*</span></p>
+            <div class="form-content-parent">
+                <p>Email<span class="required">*</span></p>
 
-                    <input type="text" class="form-input" id="email">
-                </div>
+                <input type="email" class="form-input" id="email">
+                <p class="invalid-info" id="emailValidate">Email cannot be empty.</p>
+            </div>
 
-                <div class="form-content-parent">
-                    <p>Title<span class="required">*</span></p>
-                
-                    <input type="text" class="form-input" id="title">
-                </div>
+            <div class="form-content-parent">
+                <p>Title<span class="required">*</span></p>
 
-                <div class="form-content-parent">
-                    <p>Description<span class="required">*</span></p>
-                
-                    <input type="text" class="form-input" id="description">
-                </div>
+                <input type="text" class="form-input" id="title">
+                <p class="invalid-info" id="titleValidate">Title cannot be empty.</p>
+            </div>
 
-                <div class="form-content-parent">
-                    <p>Add Tag<span class="required">*</span></p>
-                
-                    <input type="text" class="form-input" id="tag">
-                </div>
+            <div class="form-content-parent">
+                <p>Description<span class="required">*</span></p>
 
-                <div class="form-content-parent">
-                    <div class="type-parent">
-                        <p>Art Type<span class="required">*</span></p>
+                <textarea type="text" class="form-input" id="description"></textarea>
+                <p class="invalid-info" id="descriptionValidate">Description cannot be empty.</p>
+            </div>
 
-                        <div class="tooltip">
-                            <span class="tooltiptext">Choose AI Generated if your art made by AI</span>
+            <div class="form-content-parent">
+                <p>Add Tag<span class="required">*</span></p>
 
-                            <img src="../assets/webAssets/question.svg" alt="question">
-                        </div>
+                <input type="text" class="form-input" id="tag">
+                <p class="invalid-info" id="tagValidate">Tag cannot be empty.</p>
+            </div>
+
+            <div class="form-content-parent">
+                <div class="type-parent">
+                    <p>Art Type<span class="required">*</span></p>
+
+                    <div class="tooltip">
+                        <span class="tooltiptext">Choose AI Generated if your art made by AI</span>
+
+                        <img src="../assets/webAssets/question.svg" alt="question">
                     </div>
-
-                    <input type="radio" name="type" id="type-ai-generated">
-                    <label for="art-type" class="radio-label">AI Generated</label>
-
-                    <br>
-
-                    <input type="radio" name="type" id="type-original">
-                    <label for="art-type" class="radio-label">Original Art</label>
                 </div>
 
-                <input type="submit" value="Submit" class="submit-button">
-            </form>
+                <input type="radio" name="type" id="type-ai-generated">
+                <label for="art-type" class="radio-label">AI Generated</label>
+
+                <br>
+
+                <input type="radio" name="type" id="type-original" checked>
+                <label for="art-type" class="radio-label">Original Art</label>
+            </div>
+
+            <button class="submit-button" id="submitBtn">Submit</button>
         </div>
 
         <div class="form-upload">
@@ -162,13 +164,13 @@
 
     <!-- footer -->
     <div class="footer-parent">
-    
+
         <div class="f-content">
-    
+
             <img src="../assets/webAssets/logo-white.svg" alt="logo">
-    
+
             <div class="footer-content">
-    
+
                 <div class="footer-config">
                     <h3>Legal</h3>
                     <p>Terms of use</p>
@@ -178,7 +180,7 @@
                     <p>Cookies policy</p>
                     <p>Cookies settings</p>
                 </div>
-    
+
                 <div class="footer-config">
                     <h3>Information</h3>
                     <p>About us</p>
@@ -188,13 +190,13 @@
                     <p>Blog</p>
                     <p>Careers</p>
                 </div>
-    
+
                 <div class="footer-config">
                     <h3>Support</h3>
                     <p>FAQ</p>
                     <p>Contact</p>
                 </div>
-    
+
                 <div class="footer-config">
                     <h3>Social</h3>
                     <p>Instagram</p>
@@ -203,9 +205,9 @@
                     <p>Linkedin</p>
                     <p>Pinterest</p>
                 </div>
-    
+
             </div>
-    
+
             <div class="dropdown">
                 <button onclick="showFooter('legal','down-arrow1')" class="dropbtn">Legal
                     <img src="../assets/webAssets/down-arrow.svg" alt="down-arrow" id="down-arrow1">
@@ -219,7 +221,7 @@
                     <p>Cookies settings</p>
                 </div>
             </div>
-    
+
             <div class="dropdown">
                 <button onclick="showFooter('information','down-arrow2')" class="dropbtn">Information
                     <img src="../assets/webAssets/down-arrow.svg" alt="down-arrow" id="down-arrow2">
@@ -233,7 +235,7 @@
                     <p>Careers</p>
                 </div>
             </div>
-    
+
             <div class="dropdown">
                 <button onclick="showFooter('support','down-arrow3')" class="dropbtn">Support
                     <img src="../assets/webAssets/down-arrow.svg" alt="down-arrow" id="down-arrow3">
@@ -243,7 +245,7 @@
                     <p>Contact</p>
                 </div>
             </div>
-    
+
             <div class="dropdown">
                 <button onclick="showFooter('social','down-arrow4')" class="dropbtn">Social
                     <img src="../assets/webAssets/down-arrow.svg" alt="down-arrow" id="down-arrow4">
@@ -256,15 +258,17 @@
                     <p>Pinterest</p>
                 </div>
             </div>
-    
+
         </div>
-    
+
         <hr class="footer-hr">
-    
+
         <p class="copyright-info">&copy; 2025 Picverse, All rights reserved.</p>
-    
+
     </div>
     <!-- end footer -->
+
+    <script src="../script/submissionpageScript.js"></script>
 
 </body>
 

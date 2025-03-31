@@ -162,3 +162,13 @@
 .bf-button {
     border-radius: 5px;
 }
+
+.invalid-info{
+    margin-top: 10px;
+    color: #CA0003;
+    display: none;
+}
+
+textarea{
+    resize: vertical;
+}

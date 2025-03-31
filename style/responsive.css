@@ -456,6 +456,10 @@
     /* end company feature */
 
     /* explore community */
+    .explore-community-parent{
+        justify-items: center;
+    }
+
     .explore-community-parent p {
         font-size: 1.5rem;
     }
