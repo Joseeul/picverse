@@ -109,75 +109,104 @@
 }
 
 .btn-trending {
-    border: 4px solid #F85E00;
+    /* border: 4px solid #F85E00; */
     font-size: 1.2rem;
     width: 160px;
-    height: 60px;
-    border-radius: 100px;
-    color: #F85E00;
-    background-color: #FFD29D;
+    height: 50px;
+    border-radius: 5px;
+    /* color: #F85E00; */
+    color: white;
+    /* background-color: #FFD29D; */
     font-family: 'Bold', sans-serif;
     cursor: pointer;
+    background: linear-gradient(90deg, rgba(238, 9, 9, 1) 0%, rgba(218, 34, 255, 1) 0%, rgba(151, 51, 238, 1) 100%);
+    border: none;
+    transition: transform 0.3s ease;
 }
 
 .btn-ai {
     border: 4px solid #1B4965;
     font-size: 1.2rem;
     width: 180px;
-    height: 60px;
-    border-radius: 100px;
-    color: #1B4965;
-    background-color: #CAE9FF;
+    height: 50px;
+    border-radius: 5px;
+    /* color: #1B4965; */
+    color: white;
+    /* background-color: #CAE9FF; */
     font-family: 'Bold', sans-serif;
     cursor: pointer;
+    background: linear-gradient(90deg, rgba(238, 9, 9, 1) 0%, rgba(218, 34, 255, 1) 0%, rgba(151, 51, 238, 1) 100%);
+    border: none;
+    transition: transform 0.3s ease;
 }
 
 .btn-animals {
     border: 4px solid #A47148;
     font-size: 1.2rem;
     width: 160px;
-    height: 60px;
-    border-radius: 100px;
-    color: #A47148;
-    background-color: #E7BC91;
+    height: 50px;
+    border-radius: 5px;
+    /* color: #A47148; */
+    color: white;
+    /* background-color: #E7BC91; */
     font-family: 'Bold', sans-serif;
     cursor: pointer;
+    background: linear-gradient(90deg, rgba(238, 9, 9, 1) 0%, rgba(218, 34, 255, 1) 0%, rgba(151, 51, 238, 1) 100%);
+    border: none;
+    transition: transform 0.3s ease;
 }
 
 .btn-love {
     border: 4px solid #FF477E;
     font-size: 1.2rem;
     width: 160px;
-    height: 60px;
-    border-radius: 100px;
-    color: #FF477E;
-    background-color: #F9BEC7;
+    height: 50px;
+    border-radius: 5px;
+    /* color: #FF477E; */
+    color: white;
+    /* background-color: #F9BEC7; */
     font-family: 'Bold', sans-serif;
     cursor: pointer;
+    background: linear-gradient(90deg, rgba(238, 9, 9, 1) 0%, rgba(218, 34, 255, 1) 0%, rgba(151, 51, 238, 1) 100%);
+    border: none;
+    transition: transform 0.3s ease;
 }
 
 .btn-world {
     border: 4px solid #1E88E5;
     font-size: 1.2rem;
     width: 160px;
-    height: 60px;
-    border-radius: 100px;
-    color: #1E88E5;
-    background-color: #90CAF9;
+    height: 50px;
+    border-radius: 5px;
+    /* color: #1E88E5; */
+    color: white;
+    /* background-color: #90CAF9; */
     font-family: 'Bold', sans-serif;
     cursor: pointer;
+    background: linear-gradient(90deg, rgba(238, 9, 9, 1) 0%, rgba(218, 34, 255, 1) 0%, rgba(151, 51, 238, 1) 100%);
+    border: none;
+    transition: transform 0.3s ease;
 }
 
 .btn-cars {
     border: 4px solid #6C757D;
     font-size: 1.2rem;
     width: 160px;
-    height: 60px;
-    border-radius: 100px;
-    color: #6C757D;
-    background-color: #DEE2E6;
+    height: 50px;
+    border-radius: 5px;
+    /* color: #6C757D; */
+    color: white;
+    /* background-color: #DEE2E6; */
     font-family: 'Bold', sans-serif;
     cursor: pointer;
+    background: linear-gradient(90deg, rgba(238, 9, 9, 1) 0%, rgba(218, 34, 255, 1) 0%, rgba(151, 51, 238, 1) 100%);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.btn-tag-hover:hover{
+    /* background-color:  #9733EE; */
+    transform: scale(1.1);
 }
 
 /* featured artwork */
@@ -305,10 +334,6 @@
 .feature-text {
     margin: 0 4rem;
     /* background-color: purple; */
-}
-
-.f-text {
-    padding: 1rem 0;
 }
 
 .f-desc {
